@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="GB2312" ?>
+        <!DOCTYPE structs PUBLIC
+                "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+                "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--suppress XmlWrongRootElement -->
+<struts>
+    <!--设置开发模式-->
+    <constant name="struts.devMode" value="true"/>
+    <!--设置编码形式为GB2312-->
+    <constant name="struts.i18n.encoding" value="GB2312"/>
+    <package name="struc" extends="struts-default"/>
+
+    <action name="Login" class="com.handel.action.LoginAction">
+        <result name="Journalist_success" type="redirect">/journalist/journalist.jsp</result>
+        <result name="Editor_success" type="redirect">/editor/editor.jsp</result>
+        <result name="Chief_success" type="redirect">/chief/chief.jsp</result>
+    </action>
+
+    <action name="Journalist_write" class="com.handel.action.Write_in">
+        <result name="input" type="redirect">/journalist/write_news.jsp</result>
+        <result name="w_success" type="redirect">/journalist/write_success.jsp</result>
+        <result name="w_fault" type="redirect">/journalist/write_fault.jsp</result>
+    </action>
+
+    <action name="Editor_check" class="com.handel.action.EditorCheckAc">
+        <result name="input" type="redirect">/journalist/write_news.jsp</result>
+        <result name="w_success" type="redirect">/journalist/write_success.jsp</result>
+        <result name="w_fault" type="redirect">/journalist/write_fault.jsp</result>
+    </action>
+
+
+
+</struts>

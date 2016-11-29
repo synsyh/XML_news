@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<?xml-stylesheet type="text/xsl" href="News_xslt.xsl"?>
+<Root>
+    <type>Sport</type>
+    <Characters>
+        <Jurnalist>
+            <name>Huozongsheng</name>
+            <ID>10011</ID>
+            <date>
+                <year>2016</year>
+                <month>10</month>
+                <day>15</day>
+            </date>
+        </Jurnalist>
+        <Editor>
+            <Agree>Y</Agree>
+            <name>Sunyuning</name>
+            <ID>10015</ID>
+            <date>
+                <year>2016</year>
+                <month>10</month>
+                <day>15</day>
+            </date>
+        </Editor>
+        <Chief><Agree>N</Agree>
+            <name>Yangliu</name>
+            <ID>10012</ID>
+            <date>
+                <year>2016</year>
+                <month>10</month>
+                <day>15</day>
+            </date></Chief>
+    </Characters>
+    <News>
+        <Title>News title here</Title>
+        <time>
+            <year>2016</year>
+            <month>12</month>
+            <day>2</day>
+        </time>
+        <contents>
+            News here
+        </contents>
+    </News>
+</Root>
